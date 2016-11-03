@@ -1,0 +1,42 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stack</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static "css/blog.css" %}">
+</head>
+<body>
+    <div id ="masthead">
+        <div class ="container">
+            <div class ="row">
+                <h1 align="center">Stack<p id="logo"class="lead" align="center">The Trials of a Bootcamp Developer</p></h1>
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div class = "row">
+            <div class = "colmd12">
+                <div class = "panel">
+                    <div class = "panelbody">
+                        <!blogentries>
+                        {% block content %}
+                        {% endblock %}
+                        <!blogentries>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class ="container">
+
+            </div>
+    </footer>
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+</body>
+</html>
